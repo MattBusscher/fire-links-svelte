@@ -54,10 +54,7 @@ function userStore() {
 
 export const user = userStore();
 
-/**
- * @param  {string} path document path or reference
- * @returns a store with realtime updates on document data
- */
+
 export function docStore<T>(
   path: string,
 ) {
@@ -84,6 +81,7 @@ interface UserData {
   username: string;
   bio: string;
   photoURL: string;
+  published: boolean;
   links: any[];
 }
 
