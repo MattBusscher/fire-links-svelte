@@ -1,0 +1,372 @@
+[debug] [2023-08-30T20:51:51.829Z] ----------------------------------------------------------------------
+[debug] [2023-08-30T20:51:51.831Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\matty\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-30T20:51:51.832Z] CLI Version:   12.5.2
+[debug] [2023-08-30T20:51:51.832Z] Platform:      win32
+[debug] [2023-08-30T20:51:51.832Z] Node Version:  v18.12.1
+[debug] [2023-08-30T20:51:51.833Z] Time:          Wed Aug 30 2023 16:51:51 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-08-30T20:51:51.833Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-30T20:51:51.909Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-30T20:51:51.909Z] > authorizing via signed-in user (mattybusscher@gmail.com)
+[debug] [2023-08-30T20:51:51.910Z] [iam] checking project svelte-fireship-fcf63 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-30T20:51:51.914Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions [none]
+[debug] [2023-08-30T20:51:51.914Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions x-goog-quota-user=projects/svelte-fireship-fcf63
+[debug] [2023-08-30T20:51:51.915Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-30T20:51:52.485Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions 200
+[debug] [2023-08-30T20:51:52.485Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-30T20:51:52.486Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/svelte-fireship-fcf63 [none]
+[debug] [2023-08-30T20:51:52.837Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/svelte-fireship-fcf63 200
+[debug] [2023-08-30T20:51:52.837Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/svelte-fireship-fcf63 {"projectId":"svelte-fireship-fcf63","projectNumber":"1012983526175","displayName":"Svelte-fireship","name":"projects/svelte-fireship-fcf63","resources":{"hostingSite":"svelte-fireship-fcf63","storageBucket":"svelte-fireship-fcf63.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_1b532e41-50f1-498a-b901-4ac02ba8668d"}
+[debug] [2023-08-30T20:51:58.508Z] defaultcredentials: writing to file C:\Users\matty\AppData\Roaming\firebase\mattybusscher_gmail_com_application_default_credentials.json
+[debug] [2023-08-30T20:51:58.509Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/svelte-fireship-fcf63/sites pageToken=&pageSize=10
+[debug] [2023-08-30T20:51:58.939Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/svelte-fireship-fcf63/sites 200
+[debug] [2023-08-30T20:51:58.939Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/svelte-fireship-fcf63/sites {"sites":[{"name":"projects/svelte-fireship-fcf63/sites/svelte-fireship-fcf63","defaultUrl":"https://svelte-fireship-fcf63.web.app","appId":"1:1012983526175:web:f428606f99467efd01362a","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-30T20:51:58.939Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1012983526175:web:f428606f99467efd01362a/config [none]
+[debug] [2023-08-30T20:51:59.383Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1012983526175:web:f428606f99467efd01362a/config 200
+[debug] [2023-08-30T20:51:59.383Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1012983526175:web:f428606f99467efd01362a/config {"projectId":"svelte-fireship-fcf63","appId":"1:1012983526175:web:f428606f99467efd01362a","storageBucket":"svelte-fireship-fcf63.appspot.com","locationId":"us-central","apiKey":"AIzaSyCDfepuP6n9ROiGKS6ZMjSybO3AZLLtW6Q","authDomain":"svelte-fireship-fcf63.firebaseapp.com","messagingSenderId":"1012983526175","measurementId":"G-PFWTRR42M2"}
+[info] 
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-08-30T20:52:36.507Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "us-east1"
+      },
+      "site": "svelte-fireship-fcf63",
+      "rewrites": [
+        {
+          "source": "**",
+          "function": {
+            "functionId": "ssrsveltefireshipfcf63",
+            "region": "us-east1",
+            "pinTag": true
+          }
+        }
+      ],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "**/*.[jt]s",
+          "headers": [
+            {
+              "key": "Set-Cookie",
+              "value": "__FIREBASE_DEFAULTS__=eyJjb25maWciOnsicHJvamVjdElkIjoic3ZlbHRlLWZpcmVzaGlwLWZjZjYzIiwiYXBwSWQiOiIxOjEwMTI5ODM1MjYxNzU6d2ViOmY0Mjg2MDZmOTk0NjdlZmQwMTM2MmEiLCJzdG9yYWdlQnVja2V0Ijoic3ZlbHRlLWZpcmVzaGlwLWZjZjYzLmFwcHNwb3QuY29tIiwibG9jYXRpb25JZCI6InVzLWNlbnRyYWwiLCJhcGlLZXkiOiJBSXphU3lDRGZlcHVQNm45Uk9pR0tTNlpNalN5Yk8zQVpMTHRXNlEiLCJhdXRoRG9tYWluIjoic3ZlbHRlLWZpcmVzaGlwLWZjZjYzLmZpcmViYXNlYXBwLmNvbSIsIm1lc3NhZ2luZ1NlbmRlcklkIjoiMTAxMjk4MzUyNjE3NSIsIm1lYXN1cmVtZW50SWQiOiJHLVBGV1RSUjQyTTIifSwiX2F1dGhUb2tlblN5bmNVUkwiOiIvX19zZXNzaW9uIn0; SameSite=Strict; Expires=2025-07-25T07:32:36.507Z; Path=/;"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "public": ".firebase\\svelte-fireship-fcf63\\hosting",
+      "webFramework": "svelekit_ssr"
+    }
+  ],
+  "functions": [
+    {
+      "source": ".firebase\\svelte-fireship-fcf63\\functions",
+      "codebase": "firebase-frameworks-svelte-fireship-fcf63"
+    }
+  ]
+}
+[debug] [2023-08-30T20:52:36.508Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-30T20:52:36.509Z] > authorizing via signed-in user (mattybusscher@gmail.com)
+[debug] [2023-08-30T20:52:36.509Z] [iam] checking project svelte-fireship-fcf63 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2023-08-30T20:52:36.510Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions [none]
+[debug] [2023-08-30T20:52:36.510Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions x-goog-quota-user=projects/svelte-fireship-fcf63
+[debug] [2023-08-30T20:52:36.510Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-08-30T20:52:36.811Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions 200
+[debug] [2023-08-30T20:52:36.811Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[info] 
+[info] === Deploying to 'svelte-fireship-fcf63'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2023-08-30T20:52:36.813Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/svelte-fireship-fcf63 [none]
+[debug] [2023-08-30T20:52:37.114Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/svelte-fireship-fcf63 200
+[debug] [2023-08-30T20:52:37.114Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/svelte-fireship-fcf63 {"projectId":"svelte-fireship-fcf63","projectNumber":"1012983526175","displayName":"Svelte-fireship","name":"projects/svelte-fireship-fcf63","resources":{"hostingSite":"svelte-fireship-fcf63","storageBucket":"svelte-fireship-fcf63.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_1b532e41-50f1-498a-b901-4ac02ba8668d"}
+[info] i  functions: preparing codebase firebase-frameworks-svelte-fireship-fcf63 for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2023-08-30T20:52:37.117Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-08-30T20:52:37.117Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/svelte-fireship-fcf63
+[debug] [2023-08-30T20:52:37.118Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-08-30T20:52:37.118Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/svelte-fireship-fcf63
+[debug] [2023-08-30T20:52:37.118Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/cloudbuild.googleapis.com [none]
+[debug] [2023-08-30T20:52:37.118Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/cloudbuild.googleapis.com x-goog-quota-user=projects/svelte-fireship-fcf63
+[debug] [2023-08-30T20:52:37.119Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/artifactregistry.googleapis.com [none]
+[debug] [2023-08-30T20:52:37.119Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/artifactregistry.googleapis.com x-goog-quota-user=projects/svelte-fireship-fcf63
+[debug] [2023-08-30T20:52:37.547Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/runtimeconfig.googleapis.com 200
+[debug] [2023-08-30T20:52:37.547Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-08-30T20:52:37.553Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/cloudfunctions.googleapis.com 200
+[debug] [2023-08-30T20:52:37.553Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2023-08-30T20:52:37.559Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/artifactregistry.googleapis.com 200
+[debug] [2023-08-30T20:52:37.559Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2023-08-30T20:52:37.561Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/cloudbuild.googleapis.com 200
+[debug] [2023-08-30T20:52:37.561Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2023-08-30T20:52:37.562Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/svelte-fireship-fcf63/adminSdkConfig [none]
+[debug] [2023-08-30T20:52:37.862Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/svelte-fireship-fcf63/adminSdkConfig 200
+[debug] [2023-08-30T20:52:37.862Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/svelte-fireship-fcf63/adminSdkConfig {"projectId":"svelte-fireship-fcf63","storageBucket":"svelte-fireship-fcf63.appspot.com","locationId":"us-central"}
+[debug] [2023-08-30T20:52:37.862Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/svelte-fireship-fcf63/configs [none]
+[debug] [2023-08-30T20:52:38.010Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/svelte-fireship-fcf63/configs 200
+[debug] [2023-08-30T20:52:38.010Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/svelte-fireship-fcf63/configs {}
+[debug] [2023-08-30T20:52:38.011Z] Validating nodejs source
+[debug] [2023-08-30T20:52:39.421Z] > [functions] package.json contents: {
+  "name": "firesvelte",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "firebase": "^9.23.0",
+    "firebase-admin": "^11.9.0",
+    "@sveltejs/kit": "^1.20.4",
+    "firebase-frameworks": "^0.10.4",
+    "firebase-functions": "^4.3.0"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "18"
+  }
+}
+[debug] [2023-08-30T20:52:39.421Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase firebase-frameworks-svelte-fireship-fcf63 to determine what to deploy 
+[debug] [2023-08-30T20:52:39.425Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-08-30T20:52:39.436Z] Found firebase-functions binary at 'B:\CODE PROJECTS\FireSvelte\firesvelte\.firebase\svelte-fireship-fcf63\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8943
+
+[debug] [2023-08-30T20:52:39.980Z] Got response from /__/functions.yaml {"endpoints":{"ssrsveltefireshipfcf63":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["us-east1"],"labels":{},"httpsTrigger":{},"entryPoint":"ssrsveltefireshipfcf63"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: preparing .firebase\svelte-fireship-fcf63\functions directory for uploading... 
+[info] i  functions: packaged B:\CODE PROJECTS\FireSvelte\firesvelte\.firebase\svelte-fireship-fcf63\functions (114 KB) for uploading 
+[debug] [2023-08-30T20:52:40.120Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/svelte-fireship-fcf63/locations/-/functions [none]
+[debug] [2023-08-30T20:52:40.744Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/svelte-fireship-fcf63/locations/-/functions 200
+[debug] [2023-08-30T20:52:40.744Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/svelte-fireship-fcf63/locations/-/functions {}
+[debug] [2023-08-30T20:52:40.746Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/svelte-fireship-fcf63/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2023-08-30T20:52:41.297Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/svelte-fireship-fcf63/locations/-/functions 200
+[debug] [2023-08-30T20:52:41.297Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/svelte-fireship-fcf63/locations/-/functions {}
+[info] i  functions: ensuring required API run.googleapis.com is enabled... 
+[info] i  functions: ensuring required API eventarc.googleapis.com is enabled... 
+[info] i  functions: ensuring required API pubsub.googleapis.com is enabled... 
+[info] i  functions: ensuring required API storage.googleapis.com is enabled... 
+[debug] [2023-08-30T20:52:41.300Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/run.googleapis.com [none]
+[debug] [2023-08-30T20:52:41.300Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/run.googleapis.com x-goog-quota-user=projects/svelte-fireship-fcf63
+[debug] [2023-08-30T20:52:41.302Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/eventarc.googleapis.com [none]
+[debug] [2023-08-30T20:52:41.302Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/eventarc.googleapis.com x-goog-quota-user=projects/svelte-fireship-fcf63
+[debug] [2023-08-30T20:52:41.303Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/pubsub.googleapis.com [none]
+[debug] [2023-08-30T20:52:41.303Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/pubsub.googleapis.com x-goog-quota-user=projects/svelte-fireship-fcf63
+[debug] [2023-08-30T20:52:41.304Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/storage.googleapis.com [none]
+[debug] [2023-08-30T20:52:41.304Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/storage.googleapis.com x-goog-quota-user=projects/svelte-fireship-fcf63
+[debug] [2023-08-30T20:52:41.761Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/eventarc.googleapis.com 200
+[debug] [2023-08-30T20:52:41.761Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/eventarc.googleapis.com [omitted]
+[info] +  functions: required API eventarc.googleapis.com is enabled 
+[debug] [2023-08-30T20:52:41.764Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/pubsub.googleapis.com 200
+[debug] [2023-08-30T20:52:41.764Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/pubsub.googleapis.com [omitted]
+[info] +  functions: required API pubsub.googleapis.com is enabled 
+[debug] [2023-08-30T20:52:41.764Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/run.googleapis.com 200
+[debug] [2023-08-30T20:52:41.764Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/run.googleapis.com [omitted]
+[info] +  functions: required API run.googleapis.com is enabled 
+[debug] [2023-08-30T20:52:41.833Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/storage.googleapis.com 200
+[debug] [2023-08-30T20:52:41.833Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/svelte-fireship-fcf63/services/storage.googleapis.com [omitted]
+[info] +  functions: required API storage.googleapis.com is enabled 
+[info] i  functions: generating the service identity for pubsub.googleapis.com... 
+[info] i  functions: generating the service identity for eventarc.googleapis.com... 
+[debug] [2023-08-30T20:52:41.834Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/1012983526175/services/pubsub.googleapis.com:generateServiceIdentity [none]
+[debug] [2023-08-30T20:52:41.835Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/1012983526175/services/eventarc.googleapis.com:generateServiceIdentity [none]
+[debug] [2023-08-30T20:52:42.350Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/1012983526175/services/pubsub.googleapis.com:generateServiceIdentity 200
+[debug] [2023-08-30T20:52:42.350Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/1012983526175/services/pubsub.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-1012983526175@gcp-sa-pubsub.iam.gserviceaccount.com","uniqueId":"106271068620484195130"}}
+[debug] [2023-08-30T20:52:42.360Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/1012983526175/services/eventarc.googleapis.com:generateServiceIdentity 200
+[debug] [2023-08-30T20:52:42.360Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/1012983526175/services/eventarc.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-1012983526175@gcp-sa-eventarc.iam.gserviceaccount.com","uniqueId":"100574299328259518787"}}
+[debug] [2023-08-30T20:52:42.362Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/svelte-fireship-fcf63 [none]
+[debug] [2023-08-30T20:52:42.646Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/svelte-fireship-fcf63 200
+[debug] [2023-08-30T20:52:42.646Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/svelte-fireship-fcf63 {"projectId":"svelte-fireship-fcf63","projectNumber":"1012983526175","displayName":"Svelte-fireship","name":"projects/svelte-fireship-fcf63","resources":{"hostingSite":"svelte-fireship-fcf63","storageBucket":"svelte-fireship-fcf63.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_1b532e41-50f1-498a-b901-4ac02ba8668d"}
+[debug] [2023-08-30T20:52:42.649Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/svelte-fireship-fcf63/versions [none]
+[debug] [2023-08-30T20:52:42.649Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/svelte-fireship-fcf63/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"svelekit_ssr"}}
+[debug] [2023-08-30T20:52:43.352Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/svelte-fireship-fcf63/versions 200
+[debug] [2023-08-30T20:52:43.352Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/svelte-fireship-fcf63/versions {"name":"projects/1012983526175/sites/svelte-fireship-fcf63/versions/93631f395c582108","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"svelekit_ssr"}}
+[debug] [2023-08-30T20:52:43.353Z] [functions] found 1 new HTTP functions, testing setIamPolicy permission...
+[debug] [2023-08-30T20:52:43.353Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions [none]
+[debug] [2023-08-30T20:52:43.353Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions x-goog-quota-user=projects/svelte-fireship-fcf63
+[debug] [2023-08-30T20:52:43.353Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2023-08-30T20:52:43.552Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions 200
+[debug] [2023-08-30T20:52:43.552Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/svelte-fireship-fcf63:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2023-08-30T20:52:43.552Z] [functions] found setIamPolicy permission, proceeding with deploy
+[debug] [2023-08-30T20:52:43.553Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/svelte-fireship-fcf63/locations/us-east1/functions:generateUploadUrl [none]
+[debug] [2023-08-30T20:52:43.809Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/svelte-fireship-fcf63/locations/us-east1/functions:generateUploadUrl 200
+[debug] [2023-08-30T20:52:43.809Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/svelte-fireship-fcf63/locations/us-east1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/gcf-v2-uploads-1012983526175-us-east1/5d0b4cd5-c7d6-4604-9c18-66b675eba3ca.zip?GoogleAccessId=service-1012983526175@gcf-admin-robot.iam.gserviceaccount.com&Expires=1693430562&Signature=RrbS5DXuy7re2bBfcIsiGGMzztG5Jn79qBUjYdNZ5CArvFwkUXucFarBoHfX%2FuJnCmGXsm00B1XTc6sERjmuWRRUFr3hfEUWjFLw0MX9sevWNHdtuR%2Fux1ZTA0z6iyk2RRrtosyTGmLyN%2BgjrfNVGo%2BDFTSb94Hfm0rBUVbygq2%2BhUic1PaR8GJqbsAB%2BuEvHX5CYcNCre4hoOkYWUTUMEWJVdItR6a6oZ3YSu5fjbq6CG6vnGgIImiZT2bkdS54MLs1t8h%2Bo63uSrMXUoC2ZmcP0369nILWQTkauzqz%2FmMJe%2BMSa2B5NNaANgLAuCYc5oaXOFc9HOuEgouvuBuTng%3D%3D","storageSource":{"bucket":"gcf-v2-uploads-1012983526175-us-east1","object":"5d0b4cd5-c7d6-4604-9c18-66b675eba3ca.zip"}}
+[debug] [2023-08-30T20:52:43.809Z] >>> [apiv2][query] PUT https://storage.googleapis.com/gcf-v2-uploads-1012983526175-us-east1/5d0b4cd5-c7d6-4604-9c18-66b675eba3ca.zip GoogleAccessId=service-1012983526175%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1693430562&Signature=RrbS5DXuy7re2bBfcIsiGGMzztG5Jn79qBUjYdNZ5CArvFwkUXucFarBoHfX%2FuJnCmGXsm00B1XTc6sERjmuWRRUFr3hfEUWjFLw0MX9sevWNHdtuR%2Fux1ZTA0z6iyk2RRrtosyTGmLyN%2BgjrfNVGo%2BDFTSb94Hfm0rBUVbygq2%2BhUic1PaR8GJqbsAB%2BuEvHX5CYcNCre4hoOkYWUTUMEWJVdItR6a6oZ3YSu5fjbq6CG6vnGgIImiZT2bkdS54MLs1t8h%2Bo63uSrMXUoC2ZmcP0369nILWQTkauzqz%2FmMJe%2BMSa2B5NNaANgLAuCYc5oaXOFc9HOuEgouvuBuTng%3D%3D
+[debug] [2023-08-30T20:52:43.809Z] >>> [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-1012983526175-us-east1/5d0b4cd5-c7d6-4604-9c18-66b675eba3ca.zip [stream]
+[debug] [2023-08-30T20:52:44.082Z] <<< [apiv2][status] PUT https://storage.googleapis.com/gcf-v2-uploads-1012983526175-us-east1/5d0b4cd5-c7d6-4604-9c18-66b675eba3ca.zip 200
+[debug] [2023-08-30T20:52:44.082Z] <<< [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-1012983526175-us-east1/5d0b4cd5-c7d6-4604-9c18-66b675eba3ca.zip [omitted]
+[info] +  functions: .firebase\svelte-fireship-fcf63\functions folder uploaded successfully 
+[info] i  hosting[svelte-fireship-fcf63]: beginning deploy... 
+[info] i  hosting[svelte-fireship-fcf63]: found 33 files in .firebase\svelte-fireship-fcf63\hosting 
+[debug] [2023-08-30T20:52:44.097Z] [hosting] uploading with 200 concurrency
+[debug] [2023-08-30T20:52:44.098Z] [hosting] hash cache [LmZpcmViYXNlXHN2ZWx0ZS1maXJlc2hpcC1mY2Y2M1xob3N0aW5n] not populated
+[debug] [2023-08-30T20:52:44.130Z] [hosting] hash cache [LmZpcmViYXNlXHN2ZWx0ZS1maXJlc2hpcC1mY2Y2M1xob3N0aW5n] stored for 33 files
+[debug] [2023-08-30T20:52:44.131Z] [hosting][hash queue][FINAL] {"max":26,"min":9,"avg":12.090909090909092,"active":0,"complete":33,"success":33,"errored":0,"retried":0,"total":33,"elapsed":31}
+[debug] [2023-08-30T20:52:44.131Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1012983526175/sites/svelte-fireship-fcf63/versions/93631f395c582108:populateFiles [none]
+[debug] [2023-08-30T20:52:44.131Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1012983526175/sites/svelte-fireship-fcf63/versions/93631f395c582108:populateFiles {"files":{"/favicon.png":"18c34d9b1690069c518429175997e685fd60c7b5ad922d6b714a329738bb5cc7","/linkedin.svg":"912a21100a463721ddc696b47014cbef919640aeabef4fb8b5bc74db02e516db","/github.svg":"f5d8095ba4bcadb1a5b4ca8bb6d4598810c596c70275a29ae1f4216ea60931e2","/custom.svg":"17e753977b827ef9d3f94cc111aae20bf3e2edb6a8438a02076f084acd67c5aa","/_app/version.json":"87aca4cedacfe7d0f02d7cc23f2997586987b1a9f30cf099871762a2198bcd03","/youtube.svg":"9fd1e2d953ae57e42362a86568eef0011e12fd55dec2de54e2549760d78b5caa","/_app/immutable/assets/9.1942ec92.css":"10b1751043b49fde4871f1d974222443095392591d4796f49ee11fb47cb3f544","/_app/immutable/chunks/AuthCheck.6504cce7.js":"92390e430e628fd4130a7291e6518d240f8d78d814d387db094187da88534043","/_app/immutable/assets/_page.1942ec92.css":"10b1751043b49fde4871f1d974222443095392591d4796f49ee11fb47cb3f544","/_app/immutable/chunks/control.f5b05b5f.js":"7e71d91991efc94bb481484bef41989ac4406bc7baa0e3918c99c6c689988273","/_app/immutable/chunks/index.40b40403.js":"9c7a62a3de41c379cc68d9d50ac63ba7c02e88f82ffd1f6d815626b7db89727c","/_app/immutable/chunks/index.424f457e.js":"383e5ea59f403049606250c7bbf328824489680aa593fe2df98ec54cd3b545d1","/_app/immutable/chunks/parse.bee59afc.js":"a56cf1c218f802ea357df9e3d1764aa2856cdad1401b8d2526d2800d8ae2c3f4","/_app/immutable/chunks/index.da32a56b.js":"6acd4d6e4d58cdb9fec722f43f75e395f526387fa1520c6aca601748ae158166","/_app/immutable/chunks/scheduler.f8075506.js":"f47d710a95ed9c4b517623e5592a31fc5d461d73d00dd0db1b2ffc8d9af1b2f2","/_app/immutable/chunks/singletons.c9c58edb.js":"5b78f5d9ab74fb352a53a6f0a84551c4cc38705ae1f67c05bb88e0e5bf5d1ddd","/_app/immutable/chunks/UserLink.2ebbd116.js":"762232a19a6adaff588a8de02d30c91566668c4cdda7795a91d09a90687ff651","/_app/immutable/assets/_layout.38638d94.css":"4908f7739103e6b30cd670a6ef7e0d7aba342eafa7af45b635482449bead4654","/_app/immutable/chunks/stores.1b9c87dd.js":"814b489ff1d8e0cdeb3d3a1e8c987357028c86e69dbb7c4b0dd9a12a7b9c66b6","/_app/immutable/assets/0.38638d94.css":"4908f7739103e6b30cd670a6ef7e0d7aba342eafa7af45b635482449bead4654","/_app/immutable/entry/app.234849df.js":"583e888001cc21480d878414c3d288aa21bc5a7922641f0b2c990aae7f365dd3","/_app/immutable/nodes/0.b820d6b8.js":"706818cc624855fc410ada00899830bdc977175550b76d9811a3ef5c9028376f","/_app/immutable/nodes/1.2e8332fc.js":"0bfe38d33ff2cf9719d40dab95554b9ee0b16fe9c5e9a5ca95862a490f613a10","/_app/immutable/nodes/2.9d90e663.js":"1ba2fb43fd5a23bbcb6574b50f8739c47640738c79e8444b876b79c520ad4857","/_app/immutable/nodes/3.55ff0938.js":"729e1888f73332e977635cdcf069c2391dc781f5b27e2485ad16806d00315b83","/_app/immutable/nodes/4.8b158fa0.js":"b469352348892caf6d9122d4a4bbaec527213f6e501fecd4f312b7d97239d1ce","/_app/immutable/nodes/5.4eb82261.js":"c8ee90dc66e7ca93d1ec70441b68215d98939b38d69c7c39af55902484e55d18","/_app/immutable/nodes/6.e922e63b.js":"ba4b0ae4dc2c14f9614c828010976d9e0d5d23e3a8298e60b09b9d509e8f4d9f","/_app/immutable/nodes/7.dbe26f17.js":"d1c0c34a42b0008fdc5c46a1c44d545175303fd2ce9ac58cb0baf1601dd215b4","/_app/immutable/nodes/8.fa59adf2.js":"884ad10b3a8674886d28fc1f70b4f8af17a86de9f50630569689ab1969810185","/_app/immutable/entry/start.9f47a89a.js":"423b4adf84d13729494a87889a0509a5f9643ba58cbf3dcf9143406a05d6b4ae","/_app/immutable/nodes/9.8d065ba2.js":"6f486edcb2291931951732b5a2d4fc008c28cacb632240d9142de86885680b2f","/_app/immutable/chunks/firebase.43bdc105.js":"1ea6d65ae3c9df1a9b71b09edc3e2b6946292632d9296c53a3f260f9941e8a20"}}
+[debug] [2023-08-30T20:52:44.546Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1012983526175/sites/svelte-fireship-fcf63/versions/93631f395c582108:populateFiles 200
+[debug] [2023-08-30T20:52:44.547Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1012983526175/sites/svelte-fireship-fcf63/versions/93631f395c582108:populateFiles {"uploadRequiredHashes":["0bfe38d33ff2cf9719d40dab95554b9ee0b16fe9c5e9a5ca95862a490f613a10","5b78f5d9ab74fb352a53a6f0a84551c4cc38705ae1f67c05bb88e0e5bf5d1ddd","1ba2fb43fd5a23bbcb6574b50f8739c47640738c79e8444b876b79c520ad4857","87aca4cedacfe7d0f02d7cc23f2997586987b1a9f30cf099871762a2198bcd03","884ad10b3a8674886d28fc1f70b4f8af17a86de9f50630569689ab1969810185","583e888001cc21480d878414c3d288aa21bc5a7922641f0b2c990aae7f365dd3","6f486edcb2291931951732b5a2d4fc008c28cacb632240d9142de86885680b2f","423b4adf84d13729494a87889a0509a5f9643ba58cbf3dcf9143406a05d6b4ae","814b489ff1d8e0cdeb3d3a1e8c987357028c86e69dbb7c4b0dd9a12a7b9c66b6"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files"}
+[debug] [2023-08-30T20:52:44.548Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/0bfe38d33ff2cf9719d40dab95554b9ee0b16fe9c5e9a5ca95862a490f613a10 [none]
+[debug] [2023-08-30T20:52:44.548Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/0bfe38d33ff2cf9719d40dab95554b9ee0b16fe9c5e9a5ca95862a490f613a10 [stream]
+[debug] [2023-08-30T20:52:44.549Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/5b78f5d9ab74fb352a53a6f0a84551c4cc38705ae1f67c05bb88e0e5bf5d1ddd [none]
+[debug] [2023-08-30T20:52:44.549Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/5b78f5d9ab74fb352a53a6f0a84551c4cc38705ae1f67c05bb88e0e5bf5d1ddd [stream]
+[debug] [2023-08-30T20:52:44.550Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/1ba2fb43fd5a23bbcb6574b50f8739c47640738c79e8444b876b79c520ad4857 [none]
+[debug] [2023-08-30T20:52:44.550Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/1ba2fb43fd5a23bbcb6574b50f8739c47640738c79e8444b876b79c520ad4857 [stream]
+[debug] [2023-08-30T20:52:44.551Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/87aca4cedacfe7d0f02d7cc23f2997586987b1a9f30cf099871762a2198bcd03 [none]
+[debug] [2023-08-30T20:52:44.551Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/87aca4cedacfe7d0f02d7cc23f2997586987b1a9f30cf099871762a2198bcd03 [stream]
+[debug] [2023-08-30T20:52:44.552Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/884ad10b3a8674886d28fc1f70b4f8af17a86de9f50630569689ab1969810185 [none]
+[debug] [2023-08-30T20:52:44.553Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/884ad10b3a8674886d28fc1f70b4f8af17a86de9f50630569689ab1969810185 [stream]
+[debug] [2023-08-30T20:52:44.554Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/583e888001cc21480d878414c3d288aa21bc5a7922641f0b2c990aae7f365dd3 [none]
+[debug] [2023-08-30T20:52:44.554Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/583e888001cc21480d878414c3d288aa21bc5a7922641f0b2c990aae7f365dd3 [stream]
+[debug] [2023-08-30T20:52:44.555Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/6f486edcb2291931951732b5a2d4fc008c28cacb632240d9142de86885680b2f [none]
+[debug] [2023-08-30T20:52:44.555Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/6f486edcb2291931951732b5a2d4fc008c28cacb632240d9142de86885680b2f [stream]
+[debug] [2023-08-30T20:52:44.556Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/423b4adf84d13729494a87889a0509a5f9643ba58cbf3dcf9143406a05d6b4ae [none]
+[debug] [2023-08-30T20:52:44.556Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/423b4adf84d13729494a87889a0509a5f9643ba58cbf3dcf9143406a05d6b4ae [stream]
+[debug] [2023-08-30T20:52:44.557Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/814b489ff1d8e0cdeb3d3a1e8c987357028c86e69dbb7c4b0dd9a12a7b9c66b6 [none]
+[debug] [2023-08-30T20:52:44.557Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/814b489ff1d8e0cdeb3d3a1e8c987357028c86e69dbb7c4b0dd9a12a7b9c66b6 [stream]
+[debug] [2023-08-30T20:52:44.558Z] [hosting][populate queue][FINAL] {"max":419,"min":419,"avg":419,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":429}
+[debug] [2023-08-30T20:52:44.558Z] [hosting] uploads queued: 9
+[debug] [2023-08-30T20:52:45.105Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/423b4adf84d13729494a87889a0509a5f9643ba58cbf3dcf9143406a05d6b4ae 200
+[debug] [2023-08-30T20:52:45.105Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/423b4adf84d13729494a87889a0509a5f9643ba58cbf3dcf9143406a05d6b4ae [stream]
+[debug] [2023-08-30T20:52:45.144Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/814b489ff1d8e0cdeb3d3a1e8c987357028c86e69dbb7c4b0dd9a12a7b9c66b6 200
+[debug] [2023-08-30T20:52:45.144Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/814b489ff1d8e0cdeb3d3a1e8c987357028c86e69dbb7c4b0dd9a12a7b9c66b6 [stream]
+[debug] [2023-08-30T20:52:45.158Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/1ba2fb43fd5a23bbcb6574b50f8739c47640738c79e8444b876b79c520ad4857 200
+[debug] [2023-08-30T20:52:45.158Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/1ba2fb43fd5a23bbcb6574b50f8739c47640738c79e8444b876b79c520ad4857 [stream]
+[debug] [2023-08-30T20:52:45.165Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/87aca4cedacfe7d0f02d7cc23f2997586987b1a9f30cf099871762a2198bcd03 200
+[debug] [2023-08-30T20:52:45.165Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/87aca4cedacfe7d0f02d7cc23f2997586987b1a9f30cf099871762a2198bcd03 [stream]
+[debug] [2023-08-30T20:52:45.256Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/6f486edcb2291931951732b5a2d4fc008c28cacb632240d9142de86885680b2f 200
+[debug] [2023-08-30T20:52:45.256Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/6f486edcb2291931951732b5a2d4fc008c28cacb632240d9142de86885680b2f [stream]
+[debug] [2023-08-30T20:52:45.302Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/884ad10b3a8674886d28fc1f70b4f8af17a86de9f50630569689ab1969810185 200
+[debug] [2023-08-30T20:52:45.302Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/884ad10b3a8674886d28fc1f70b4f8af17a86de9f50630569689ab1969810185 [stream]
+[debug] [2023-08-30T20:52:45.310Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/5b78f5d9ab74fb352a53a6f0a84551c4cc38705ae1f67c05bb88e0e5bf5d1ddd 200
+[debug] [2023-08-30T20:52:45.311Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/5b78f5d9ab74fb352a53a6f0a84551c4cc38705ae1f67c05bb88e0e5bf5d1ddd [stream]
+[debug] [2023-08-30T20:52:45.314Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/0bfe38d33ff2cf9719d40dab95554b9ee0b16fe9c5e9a5ca95862a490f613a10 200
+[debug] [2023-08-30T20:52:45.314Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/0bfe38d33ff2cf9719d40dab95554b9ee0b16fe9c5e9a5ca95862a490f613a10 [stream]
+[debug] [2023-08-30T20:52:45.384Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/583e888001cc21480d878414c3d288aa21bc5a7922641f0b2c990aae7f365dd3 200
+[debug] [2023-08-30T20:52:45.384Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/svelte-fireship-fcf63/versions/93631f395c582108/files/583e888001cc21480d878414c3d288aa21bc5a7922641f0b2c990aae7f365dd3 [stream]
+[debug] [2023-08-30T20:52:45.385Z] [hosting][upload queue][FINAL] {"max":837,"min":557,"avg":690.6666666666666,"active":0,"complete":9,"success":9,"errored":0,"retried":0,"total":9,"elapsed":838}
+[info] +  hosting[svelte-fireship-fcf63]: file upload complete 
+[debug] [2023-08-30T20:52:45.386Z] [hosting] deploy completed after 1303ms
+[info] i  functions: creating Node.js 18 (2nd Gen) function firebase-frameworks-svelte-fireship-fcf63:ssrsveltefireshipfcf63(us-east1)... 
+[debug] [2023-08-30T20:52:45.392Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/svelte-fireship-fcf63/locations/us-east1/functions functionId=ssrsveltefireshipfcf63
+[debug] [2023-08-30T20:52:45.392Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/svelte-fireship-fcf63/locations/us-east1/functions {"name":"projects/svelte-fireship-fcf63/locations/us-east1/functions/ssrsveltefireshipfcf63","buildConfig":{"runtime":"nodejs18","entryPoint":"ssrsveltefireshipfcf63","source":{"storageSource":{"bucket":"gcf-v2-uploads-1012983526175-us-east1","object":"5d0b4cd5-c7d6-4604-9c18-66b675eba3ca.zip"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}},"serviceConfig":{"environmentVariables":{"FB_SERVICE_ACCOUNT":"service-account.json","FB_PROJECT_ID":"svelte-fireship-fcf63","FB_CLIENT_EMAIL":"firebase-adminsdk-6f3lq@svelte-fireship-fcf63.iam.gserviceaccount.com","FB_PRIVATE_KEY":"-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCxJTiKYrTxf0KO\nl6GDv121Haaej1dJGFF+GiiHXflSoMr4eb3YUb2zNa3Kl+ZWF03Or7vRqZlUubnJ\nIP7bTlpqBMDFwmQ0VYNnMmIau9Wz5vREzFl06uJgca1ZgrFeddRAxqRhcbkUF9cO\n0C7jBCSxxevVcrrQFcY291kvyIx/N/AjYTqXoDLx1yAD2NovNDVC1YcJPLNH/41N\nOFKvMcxuQJXUc0WftBm3+cZudgNLGeBu6PfObx669HVmqAZWre2Jv8xNqE79Fd2m\n1OfCk9RPc7igbN5pvWSaJTaJWEHstwwksW8oyk+ajSpo+sqa4jpI0H1NCHmK3/lX\n3yM7ftrNAgMBAAECggEACxZvUYoYFT2H5vDqtRpXPSzb7vS9299fymrMupxRLLDP\nw3mrPkzveLYVaKbVTfIrdpJdSSQ6aqktTb949DUVR6mAf2BJcVUg4mau6Ul0eMwt\n4diAiObiwHKdDQs3Gth5LozAYTEDCpTrawvww1jRCyd+OV/y/W8/dtVIicsdsCCv\ndqyOgHvTIBfHSdeKfUvdBs56D984Rtn+DoYy1HGT3SVl7z3gi2OpW0DqKXb1xbxP\nF3IH+FWbcN0/7BEcIhavHnHQ74bvn2i9TSqTK7VEUNSIj0vZKVb1u4RUt3TGX3P3\n/KUDnKsxksJlHi1HevOjudgcxcPpk8V90na37PvnqQKBgQDk/Bg2h1QTAV4B/tl5\nKxFsJIE/fCT5kx3IiMWegcm/gEkOuJ/jCuA7BLlsq6KU+iumRy4EDRv9B9m1AXQe\nebeoJ5QZOCi2PrIffObvqazH6uYFhs8TDJogHGGyEvoEHDVPKQvJRR+8t+OkvOwh\nvtUifq4KQuY2Se8NZNTrzilVcwKBgQDGC3MhdKFGQ2uNAXNwMQxMYmK0PsCYAGEm\nd4t1OryIVB0HwVhUJfokandOgPor/qvF10coh6+CpzQqSG4uzy5dBz7V0vqYOQ/y\nN+qz7fAomGypQAjb4+7HBS+4JmReQLIzxUoEJWUJFxZe0XpF/W6oXC5EvXQPGY6X\nU31mAKD+vwKBgCHM/J3/9+8eQow03FFAhD/cW5/NaX/VsY3KcrFlIyy7eQ1NP3y6\nPEM5/U0HQOaQzySqWSaL8Ne28vH/Fu7wtKWDwh6+5XORaaWwQD6cYz7Xc8DZF3QO\nZinbRqiMmI9Gwq++tViudXLcCiRlJs4MZ1XCMVqeaXEWFM17VtrAAeX1AoGAVWhE\nq23nyyxyKmowxXZxjlNzq7XQSv0G6Jbvbov5GHXl2x1XoVqLaL79Wr6mpOh8XaK8\njk8NsrO2/HEmC0vP+9CPGZmV9qXNKbFRp2z6gBdT7R2vdFz08aFb9fegm0EdWNRB\nWk5iJyxsulFugNaNrU+rqHtnnMdxxfL8hkvJInMCgYB9ceorHZUTdEQ9N4NAym3S\nqnWWWRSrHHbPd4Eateyjcu2yScH+SiQwMV/xFMEWhgAc0MBTYFSTXl365KTiLVnC\naZQEfIsjGd4EtuZwO4ax1F0BBCitkEjI0zbBkBF/lCGxLcPU4Hn96/axG4nTKcPA\nD+x2luxn1ysbe/8U23oK/g==\n-----END PRIVATE KEY-----\n","__FIREBASE_FRAMEWORKS_ENTRY__":"sveltekit","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"svelte-fireship-fcf63\",\"appId\":\"1:1012983526175:web:f428606f99467efd01362a\",\"storageBucket\":\"svelte-fireship-fcf63.appspot.com\",\"locationId\":\"us-central\",\"apiKey\":\"AIzaSyCDfepuP6n9ROiGKS6ZMjSybO3AZLLtW6Q\",\"authDomain\":\"svelte-fireship-fcf63.firebaseapp.com\",\"messagingSenderId\":\"1012983526175\",\"measurementId\":\"G-PFWTRR42M2\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"svelte-fireship-fcf63\",\"storageBucket\":\"svelte-fireship-fcf63.appspot.com\",\"locationId\":\"us-central\"}","GCLOUD_PROJECT":"svelte-fireship-fcf63","EVENTARC_CLOUD_EVENT_SOURCE":"projects/svelte-fireship-fcf63/locations/us-east1/services/ssrsveltefireshipfcf63"},"ingressSettings":null,"timeoutSeconds":null,"serviceAccountEmail":null,"availableMemory":"256Mi","minInstanceCount":null,"maxInstanceCount":null,"maxInstanceRequestConcurrency":80,"availableCpu":"1","vpcConnector":null,"vpcConnectorEgressSettings":null},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-svelte-fireship-fcf63","firebase-functions-hash":"a64b36edec8685c07cc1670997a7cd59c23d9842"}}
+[debug] [2023-08-30T20:52:45.917Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/svelte-fireship-fcf63/locations/us-east1/functions 400
+[debug] [2023-08-30T20:52:45.917Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/svelte-fireship-fcf63/locations/us-east1/functions {"error":{"code":400,"message":"Could not create Cloud Run service ssrsveltefireshipfcf63. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.","status":"INVALID_ARGUMENT"}}
+[warn] !  functions: Your current project quotas don't allow for the current max instances setting of 100. Either reduce this function's maximum instances, or request a quota increase on the underlying Cloud Run service at https://cloud.google.com/run/quotas. 
+[warn] !  functions: You can adjust the max instances value in your function's runtime options:
+	setGlobalOptions({maxInstances: 10}) 
+[error] Failed to create function projects/svelte-fireship-fcf63/locations/us-east1/functions/ssrsveltefireshipfcf63
+[debug] [2023-08-30T20:52:45.941Z] Total Function Deployment time: 538
+[debug] [2023-08-30T20:52:45.941Z] 1 Functions Deployed
+[debug] [2023-08-30T20:52:45.941Z] 1 Functions Errored
+[debug] [2023-08-30T20:52:45.941Z] 0 Function Deployments Aborted
+[debug] [2023-08-30T20:52:45.941Z] Average Function Deployment time: 536
+[info] 
+[info] Functions deploy had errors with the following functions:
+	firebase-frameworks-svelte-fireship-fcf63:ssrsveltefireshipfcf63(us-east1)
+[debug] [2023-08-30T20:52:46.094Z] Not printing URL for HTTPS function. Typically this means it didn't match a filter or we failed deployment
+[info] i  functions: cleaning up build files... 
+[debug] [2023-08-30T20:52:46.097Z] >>> [apiv2][query] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/svelte-fireship-fcf63/locations/us-east1/repositories/gcf-artifacts/packages/ssrsveltefireshipfcf63 [none]
+[debug] [2023-08-30T20:52:46.097Z] >>> [apiv2][query] GET https://us.gcr.io/v2/svelte-fireship-fcf63/gcf/us-east1/tags/list [none]
+[debug] [2023-08-30T20:52:46.288Z] <<< [apiv2][status] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/svelte-fireship-fcf63/locations/us-east1/repositories/gcf-artifacts/packages/ssrsveltefireshipfcf63 404
+[debug] [2023-08-30T20:52:46.288Z] <<< [apiv2][body] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/svelte-fireship-fcf63/locations/us-east1/repositories/gcf-artifacts/packages/ssrsveltefireshipfcf63 {"error":{"code":404,"message":"Package \"projects/svelte-fireship-fcf63/locations/us-east1/repositories/gcf-artifacts/packages/ssrsveltefireshipfcf63\" was not found.","status":"NOT_FOUND"}}
+[debug] [2023-08-30T20:52:46.323Z] <<< [apiv2][status] GET https://us.gcr.io/v2/svelte-fireship-fcf63/gcf/us-east1/tags/list 200
+[debug] [2023-08-30T20:52:46.323Z] <<< [apiv2][body] GET https://us.gcr.io/v2/svelte-fireship-fcf63/gcf/us-east1/tags/list {"child":[],"manifest":{},"name":"svelte-fireship-fcf63/gcf/us-east1","tags":[]}
+[debug] [2023-08-30T20:52:46.324Z] Could not find image for function projects/svelte-fireship-fcf63/locations/us-east1/functions/ssrsveltefireshipfcf63
+[debug] [2023-08-30T20:52:46.324Z] Functions deploy failed.
+[debug] [2023-08-30T20:52:46.324Z] {
+  "endpoint": {
+    "id": "ssrsveltefireshipfcf63",
+    "project": "svelte-fireship-fcf63",
+    "region": "us-east1",
+    "entryPoint": "ssrsveltefireshipfcf63",
+    "platform": "gcfv2",
+    "runtime": "nodejs18",
+    "httpsTrigger": {},
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    },
+    "serviceAccount": null,
+    "ingressSettings": null,
+    "availableMemoryMb": null,
+    "timeoutSeconds": null,
+    "maxInstances": null,
+    "minInstances": null,
+    "concurrency": 80,
+    "vpc": null,
+    "environmentVariables": {
+      "FB_SERVICE_ACCOUNT": "service-account.json",
+      "FB_PROJECT_ID": "svelte-fireship-fcf63",
+      "FB_CLIENT_EMAIL": "firebase-adminsdk-6f3lq@svelte-fireship-fcf63.iam.gserviceaccount.com",
+      "FB_PRIVATE_KEY": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCxJTiKYrTxf0KO\nl6GDv121Haaej1dJGFF+GiiHXflSoMr4eb3YUb2zNa3Kl+ZWF03Or7vRqZlUubnJ\nIP7bTlpqBMDFwmQ0VYNnMmIau9Wz5vREzFl06uJgca1ZgrFeddRAxqRhcbkUF9cO\n0C7jBCSxxevVcrrQFcY291kvyIx/N/AjYTqXoDLx1yAD2NovNDVC1YcJPLNH/41N\nOFKvMcxuQJXUc0WftBm3+cZudgNLGeBu6PfObx669HVmqAZWre2Jv8xNqE79Fd2m\n1OfCk9RPc7igbN5pvWSaJTaJWEHstwwksW8oyk+ajSpo+sqa4jpI0H1NCHmK3/lX\n3yM7ftrNAgMBAAECggEACxZvUYoYFT2H5vDqtRpXPSzb7vS9299fymrMupxRLLDP\nw3mrPkzveLYVaKbVTfIrdpJdSSQ6aqktTb949DUVR6mAf2BJcVUg4mau6Ul0eMwt\n4diAiObiwHKdDQs3Gth5LozAYTEDCpTrawvww1jRCyd+OV/y/W8/dtVIicsdsCCv\ndqyOgHvTIBfHSdeKfUvdBs56D984Rtn+DoYy1HGT3SVl7z3gi2OpW0DqKXb1xbxP\nF3IH+FWbcN0/7BEcIhavHnHQ74bvn2i9TSqTK7VEUNSIj0vZKVb1u4RUt3TGX3P3\n/KUDnKsxksJlHi1HevOjudgcxcPpk8V90na37PvnqQKBgQDk/Bg2h1QTAV4B/tl5\nKxFsJIE/fCT5kx3IiMWegcm/gEkOuJ/jCuA7BLlsq6KU+iumRy4EDRv9B9m1AXQe\nebeoJ5QZOCi2PrIffObvqazH6uYFhs8TDJogHGGyEvoEHDVPKQvJRR+8t+OkvOwh\nvtUifq4KQuY2Se8NZNTrzilVcwKBgQDGC3MhdKFGQ2uNAXNwMQxMYmK0PsCYAGEm\nd4t1OryIVB0HwVhUJfokandOgPor/qvF10coh6+CpzQqSG4uzy5dBz7V0vqYOQ/y\nN+qz7fAomGypQAjb4+7HBS+4JmReQLIzxUoEJWUJFxZe0XpF/W6oXC5EvXQPGY6X\nU31mAKD+vwKBgCHM/J3/9+8eQow03FFAhD/cW5/NaX/VsY3KcrFlIyy7eQ1NP3y6\nPEM5/U0HQOaQzySqWSaL8Ne28vH/Fu7wtKWDwh6+5XORaaWwQD6cYz7Xc8DZF3QO\nZinbRqiMmI9Gwq++tViudXLcCiRlJs4MZ1XCMVqeaXEWFM17VtrAAeX1AoGAVWhE\nq23nyyxyKmowxXZxjlNzq7XQSv0G6Jbvbov5GHXl2x1XoVqLaL79Wr6mpOh8XaK8\njk8NsrO2/HEmC0vP+9CPGZmV9qXNKbFRp2z6gBdT7R2vdFz08aFb9fegm0EdWNRB\nWk5iJyxsulFugNaNrU+rqHtnnMdxxfL8hkvJInMCgYB9ceorHZUTdEQ9N4NAym3S\nqnWWWRSrHHbPd4Eateyjcu2yScH+SiQwMV/xFMEWhgAc0MBTYFSTXl365KTiLVnC\naZQEfIsjGd4EtuZwO4ax1F0BBCitkEjI0zbBkBF/lCGxLcPU4Hn96/axG4nTKcPA\nD+x2luxn1ysbe/8U23oK/g==\n-----END PRIVATE KEY-----\n",
+      "__FIREBASE_FRAMEWORKS_ENTRY__": "sveltekit",
+      "__FIREBASE_DEFAULTS__": "{\"config\":{\"projectId\":\"svelte-fireship-fcf63\",\"appId\":\"1:1012983526175:web:f428606f99467efd01362a\",\"storageBucket\":\"svelte-fireship-fcf63.appspot.com\",\"locationId\":\"us-central\",\"apiKey\":\"AIzaSyCDfepuP6n9ROiGKS6ZMjSybO3AZLLtW6Q\",\"authDomain\":\"svelte-fireship-fcf63.firebaseapp.com\",\"messagingSenderId\":\"1012983526175\",\"measurementId\":\"G-PFWTRR42M2\"},\"_authTokenSyncURL\":\"/__session\"}",
+      "FIREBASE_CONFIG": "{\"projectId\":\"svelte-fireship-fcf63\",\"storageBucket\":\"svelte-fireship-fcf63.appspot.com\",\"locationId\":\"us-central\"}",
+      "GCLOUD_PROJECT": "svelte-fireship-fcf63",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/svelte-fireship-fcf63/locations/us-east1/services/ssrsveltefireshipfcf63"
+    },
+    "codebase": "firebase-frameworks-svelte-fireship-fcf63",
+    "cpu": 1,
+    "targetedByOnly": false,
+    "hash": "a64b36edec8685c07cc1670997a7cd59c23d9842"
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "context": {
+      "function": "projects/svelte-fireship-fcf63/locations/us-east1/functions/ssrsveltefireshipfcf63"
+    },
+    "exit": 1,
+    "message": "Failed to create function projects/svelte-fireship-fcf63/locations/us-east1/functions/ssrsveltefireshipfcf63",
+    "original": {
+      "name": "FirebaseError",
+      "children": [],
+      "context": {
+        "body": {
+          "error": {
+            "code": 400,
+            "message": "Could not create Cloud Run service ssrsveltefireshipfcf63. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.",
+            "status": "INVALID_ARGUMENT"
+          }
+        },
+        "response": {
+          "statusCode": 400
+        }
+      },
+      "exit": 1,
+      "message": "HTTP Error: 400, Could not create Cloud Run service ssrsveltefireshipfcf63. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.",
+      "status": 400
+    },
+    "status": 400,
+    "code": 400
+  }
+}
+[debug] [2023-08-30T20:52:46.502Z] Error: Failed to create function ssrsveltefireshipfcf63 in region us-east1
+    at C:\Users\matty\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:288:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Fabricator.createV2Function (C:\Users\matty\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:276:30)
+    at async Fabricator.createEndpoint (C:\Users\matty\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:135:13)
+    at async handle (C:\Users\matty\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:88:17)
+[error] 
+[error] Error: There was an error deploying functions
